@@ -12,4 +12,15 @@ function Produto(_codigo, _foto, _nome, _descricao, _preco, _peso) {
 function Carrinho(_dono) {
 	this.dono = _dono;
 	Produtos  = [];
+
+	/* Função que faz a escolha do PC */
+	this.addToCar = function (produto, quantidade) {
+		if (Produtos.indexOf(produto) >= 0) {
+			Produtos[Produtos.indexOf(produto)].quantidade += quantidade;
+		}
+
+		else{
+			Produtos[Produtos.length] = [produto, quantidade];
+		}
+    };
 }
