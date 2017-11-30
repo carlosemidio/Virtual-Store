@@ -24,3 +24,10 @@ function Carrinho(_dono) {
 		}
     };
 }
+
+
+var carrinhos = [];
+
+$(document).ready(function(){
+    carrinhos[carrinhos.length] = new Carrinho("");
+});

@@ -46,3 +46,20 @@ body{
 @media screen and (min-width: 480px) {
     
 }
+
+.modal-body {
+  overflow-x: auto;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+
+    padding: 5px !important; // currently 8px
+}
+
+.table th, td{
+	padding: 12px;
+}

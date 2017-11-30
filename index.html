@@ -2,12 +2,13 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>test</title>
+	<title>Loja Online 2.0</title>
 	<link rel="stylesheet" type="text/css" href="font/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/loja.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -31,7 +32,7 @@
 
 
 	    	<div class="col-md-3">
-	    		<div class="text-center">
+	    		<div class="text-left">
 	    			<a href="#"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
 	    		</div>
 	    	</div>
@@ -43,112 +44,872 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-2"> 
-				<div class="card-product">
+				<div class="card-product" data-toggle="modal" data-target="#myModal1">
 					<p>Obama: An Intimate Portrait</p>
 					<img src="img/1.jpg">
 				</div>
 			</div>
+
+			<!-- Modal -->
+				<div class="modal fade" id="myModal1">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+					    <div class="modal-header">
+					      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					      <h4 class="modal-title">Obama: An Intimate Portrait</h4>
+					    </div>
+					    <div class="modal-body">
+					      <table  class="table">
+					          <thead>
+					          	<th>Produto</th>
+					          	<th>Quantidade</th>
+					          	<th>Preço</th>
+					          </thead>
+					          <tbody>
+					              <tr>
+					                  <td><img src="img/1.jpg" style="max-width: 30%;"></td>
+					                  <td>
+					                  	<select class="form-control">
+										  <option value="1">1</option>
+										  <option value="2">2</option>
+										  <option value="3">3</option>
+										  <option value="4">4</option>
+										  <option value="5">5</option>
+										  <option value="6">6</option>
+										  <option value="7">7</option>
+										  <option value="8">8</option>
+										</select>
+									  </td>
+								      <td>R$ 35,00</td>
+					              </tr>
+					          </tbody>
+					      </table>
+					    </div>
+					    <div class="modal-footer">
+					    	<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+					      	<button type="button" class="btn btn-primary" data-dismiss="modal">Sair</button>
+					    </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+
 			<div class="col-sm-2"> 
-				<div class="card-product">
+				<!-- Trigger the modal with a button -->
+				<div class="card-product" data-toggle="modal" data-target="#myModal2">
 					<p>Milk and Vine: Inspirational Quotes From Classic Vines</p>
 					<img src="img/2.jpg">
 				</div>
+
+				<!-- Modal -->
+				<div class="modal fade" id="myModal2">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+					    <div class="modal-header">
+					      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					      <h4 class="modal-title">Milk and Vine: Inspirational Quotes From Classic Vines</h4>
+					    </div>
+					    <div class="modal-body">
+					      <table  class="table">
+					          <thead>
+					          	<th>Produto</th>
+					          	<th>Quantidade</th>
+					          	<th>Preço</th>
+					          </thead>
+					          <tbody>
+					              <tr>
+					                  <td><img src="img/2.jpg" style="max-width: 30%;"></td>
+					                  <td>
+					                  	<select class="form-control">
+										  <option value="1">1</option>
+										  <option value="2">2</option>
+										  <option value="3">3</option>
+										  <option value="4">4</option>
+										  <option value="5">5</option>
+										  <option value="6">6</option>
+										  <option value="7">7</option>
+										  <option value="8">8</option>
+										</select>
+									  </td>
+								      <td>R$ 35,00</td>
+					              </tr>
+					          </tbody>
+					      </table>
+					    </div>
+					    <div class="modal-footer">
+					    	<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+					      	<button type="button" class="btn btn-primary" data-dismiss="modal">Sair</button>
+					    </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 			</div>
 			<div class="col-sm-2"> 
-				<div class="card-product">
+				<div class="card-product" data-toggle="modal" data-target="#myModal3">
 					<p>Giraffes Can't Dance</p>
 					<img src="img/3.jpg">
 				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal3">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+					    <div class="modal-header">
+					      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					      <h4 class="modal-title">Giraffes Can't Dance</h4>
+					    </div>
+					    <div class="modal-body">
+					      <table  class="table">
+					          <thead>
+					          	<th>Produto</th>
+					          	<th>Quantidade</th>
+					          	<th>Preço</th>
+					          </thead>
+					          <tbody>
+					              <tr>
+					                  <td><img src="img/3.jpg" style="max-width: 30%;"></td>
+					                  <td>
+					                  	<select class="form-control">
+										  <option value="1">1</option>
+										  <option value="2">2</option>
+										  <option value="3">3</option>
+										  <option value="4">4</option>
+										  <option value="5">5</option>
+										  <option value="6">6</option>
+										  <option value="7">7</option>
+										  <option value="8">8</option>
+										</select>
+									  </td>
+								      <td>R$ 35,00</td>
+					              </tr>
+					          </tbody>
+					      </table>
+					    </div>
+					    <div class="modal-footer">
+					    	<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+					      	<button type="button" class="btn btn-primary" data-dismiss="modal">Sair</button>
+					    </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 			</div>
 			<div class="col-sm-2"> 
-				<div class="card-product">
+				<div class="card-product" data-toggle="modal" data-target="#myModal4">
 					<p>First 100 Words</p>
 					<img src="img/4.jpg">
 				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal4">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+					    <div class="modal-header">
+					      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					      <h4 class="modal-title">First 100 Words</h4>
+					    </div>
+					    <div class="modal-body">
+					      <table  class="table">
+					          <thead>
+					          	<th>Produto</th>
+					          	<th>Quantidade</th>
+					          	<th>Preço</th>
+					          </thead>
+					          <tbody>
+					              <tr>
+					                  <td><img src="img/4.jpg" style="max-width: 30%;"></td>
+					                  <td>
+					                  	<select class="form-control">
+										  <option value="1">1</option>
+										  <option value="2">2</option>
+										  <option value="3">3</option>
+										  <option value="4">4</option>
+										  <option value="5">5</option>
+										  <option value="6">6</option>
+										  <option value="7">7</option>
+										  <option value="8">8</option>
+										</select>
+									  </td>
+								      <td>R$ 35,00</td>
+					              </tr>
+					          </tbody>
+					      </table>
+					    </div>
+					    <div class="modal-footer">
+					    	<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+					      	<button type="button" class="btn btn-primary" data-dismiss="modal">Sair</button>
+					    </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 			</div>
 			<div class="col-sm-2"> 
-				<div class="card-product">
+				<div class="card-product" data-toggle="modal" data-target="#myModal5">
 					<p>The Getaway (Diary of a Wimpy Kid Book 12)</p>
 					<img src="img/5.jpg">
 				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal5">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+					    <div class="modal-header">
+					      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					      <h4 class="modal-title">The Getaway (Diary of a Wimpy Kid Book 12)</h4>
+					    </div>
+					    <div class="modal-body">
+					      <table  class="table">
+					          <thead>
+					          	<th>Produto</th>
+					          	<th>Quantidade</th>
+					          	<th>Preço</th>
+					          </thead>
+					          <tbody>
+					              <tr>
+					                  <td><img src="img/5.jpg" style="max-width: 30%;"></td>
+					                  <td>
+					                  	<select class="form-control">
+										  <option value="1">1</option>
+										  <option value="2">2</option>
+										  <option value="3">3</option>
+										  <option value="4">4</option>
+										  <option value="5">5</option>
+										  <option value="6">6</option>
+										  <option value="7">7</option>
+										  <option value="8">8</option>
+										</select>
+									  </td>
+								      <td>R$ 35,00</td>
+					              </tr>
+					          </tbody>
+					      </table>
+					    </div>
+					    <div class="modal-footer">
+					    	<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+					      	<button type="button" class="btn btn-primary" data-dismiss="modal">Sair</button>
+					    </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 			</div>
 			<div class="col-sm-2"> 
-				<div class="card-product">
+				<div class="card-product" data-toggle="modal" data-target="#myModal6">
 					<p>Goodnight Moon</p>
 					<img src="img/6.jpg">
 				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal6">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+					    <div class="modal-header">
+					      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					      <h4 class="modal-title">Goodnight Moon</h4>
+					    </div>
+					    <div class="modal-body">
+					      <table  class="table">
+					          <thead>
+					          	<th>Produto</th>
+					          	<th>Quantidade</th>
+					          	<th>Preço</th>
+					          </thead>
+					          <tbody>
+					              <tr>
+					                  <td><img src="img/6.jpg" style="max-width: 30%;"></td>
+					                  <td>
+					                  	<select class="form-control">
+										  <option value="1">1</option>
+										  <option value="2">2</option>
+										  <option value="3">3</option>
+										  <option value="4">4</option>
+										  <option value="5">5</option>
+										  <option value="6">6</option>
+										  <option value="7">7</option>
+										  <option value="8">8</option>
+										</select>
+									  </td>
+								      <td>R$ 35,00</td>
+					              </tr>
+					          </tbody>
+					      </table>
+					    </div>
+					    <div class="modal-footer">
+					    	<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+					      	<button type="button" class="btn btn-primary" data-dismiss="modal">Sair</button>
+					    </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 			</div>
 			<div class="col-sm-2"> 
-				<div class="card-product">
+				<div class="card-product" data-toggle="modal" data-target="#myModal7">
 					<p>The Very Hungry Caterpillar</p>
 					<img src="img/7.jpg">
 				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal7">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+					    <div class="modal-header">
+					      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					      <h4 class="modal-title">The Very Hungry Caterpillar</h4>
+					    </div>
+					    <div class="modal-body">
+					      <table  class="table">
+					          <thead>
+					          	<th>Produto</th>
+					          	<th>Quantidade</th>
+					          	<th>Preço</th>
+					          </thead>
+					          <tbody>
+					              <tr>
+					                  <td><img src="img/7.jpg" style="max-width: 30%;"></td>
+					                  <td>
+					                  	<select class="form-control">
+										  <option value="1">1</option>
+										  <option value="2">2</option>
+										  <option value="3">3</option>
+										  <option value="4">4</option>
+										  <option value="5">5</option>
+										  <option value="6">6</option>
+										  <option value="7">7</option>
+										  <option value="8">8</option>
+										</select>
+									  </td>
+								      <td>R$ 35,00</td>
+					              </tr>
+					          </tbody>
+					      </table>
+					    </div>
+					    <div class="modal-footer">
+					    	<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+					      	<button type="button" class="btn btn-primary" data-dismiss="modal">Sair</button>
+					    </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 			</div>
 			<div class="col-sm-2"> 
-				<div class="card-product">
+				<div class="card-product" data-toggle="modal" data-target="#myModal8">
 					<p>The Midnight Line: A Jack Reacher Novel</p>
 					<img src="img/8.jpg">
 				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal8">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+					    <div class="modal-header">
+					      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					      <h4 class="modal-title">The Midnight Line: A Jack Reacher Novel</h4>
+					    </div>
+					    <div class="modal-body">
+					      <table  class="table">
+					          <thead>
+					          	<th>Produto</th>
+					          	<th>Quantidade</th>
+					          	<th>Preço</th>
+					          </thead>
+					          <tbody>
+					              <tr>
+					                  <td><img src="img/8.jpg" style="max-width: 30%;"></td>
+					                  <td>
+					                  	<select class="form-control">
+										  <option value="1">1</option>
+										  <option value="2">2</option>
+										  <option value="3">3</option>
+										  <option value="4">4</option>
+										  <option value="5">5</option>
+										  <option value="6">6</option>
+										  <option value="7">7</option>
+										  <option value="8">8</option>
+										</select>
+									  </td>
+								      <td>R$ 35,00</td>
+					              </tr>
+					          </tbody>
+					      </table>
+					    </div>
+					    <div class="modal-footer">
+					    	<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+					      	<button type="button" class="btn btn-primary" data-dismiss="modal">Sair</button>
+					    </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 			</div>
 			<div class="col-sm-2"> 
-				<div class="card-product">
+				<div class="card-product" data-toggle="modal" data-target="#myModal9">
 					<p>The Good Samaritan</p>
 					<img src="img/9.jpg">
 				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal9">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+					    <div class="modal-header">
+					      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					      <h4 class="modal-title">The Good Samaritan</h4>
+					    </div>
+					    <div class="modal-body">
+					      <table  class="table">
+					          <thead>
+					          	<th>Produto</th>
+					          	<th>Quantidade</th>
+					          	<th>Preço</th>
+					          </thead>
+					          <tbody>
+					              <tr>
+					                  <td><img src="img/9.jpg" style="max-width: 30%;"></td>
+					                  <td>
+					                  	<select class="form-control">
+										  <option value="1">1</option>
+										  <option value="2">2</option>
+										  <option value="3">3</option>
+										  <option value="4">4</option>
+										  <option value="5">5</option>
+										  <option value="6">6</option>
+										  <option value="7">7</option>
+										  <option value="8">8</option>
+										</select>
+									  </td>
+								      <td>R$ 35,00</td>
+					              </tr>
+					          </tbody>
+					      </table>
+					    </div>
+					    <div class="modal-footer">
+					    	<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+					      	<button type="button" class="btn btn-primary" data-dismiss="modal">Sair</button>
+					    </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 			</div>
 			<div class="col-sm-2"> 
-				<div class="card-product">
+				<div class="card-product" data-toggle="modal" data-target="#myModal10">
 					<p>The Unremembered Girl: A Novel</p>
 					<img src="img/10.jpg">
 				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal10">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+					    <div class="modal-header">
+					      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					      <h4 class="modal-title">The Unremembered Girl: A Novel</h4>
+					    </div>
+					    <div class="modal-body">
+					      <table  class="table">
+					          <thead>
+					          	<th>Produto</th>
+					          	<th>Quantidade</th>
+					          	<th>Preço</th>
+					          </thead>
+					          <tbody>
+					              <tr>
+					                  <td><img src="img/10.jpg" style="max-width: 30%;"></td>
+					                  <td>
+					                  	<select class="form-control">
+										  <option value="1">1</option>
+										  <option value="2">2</option>
+										  <option value="3">3</option>
+										  <option value="4">4</option>
+										  <option value="5">5</option>
+										  <option value="6">6</option>
+										  <option value="7">7</option>
+										  <option value="8">8</option>
+										</select>
+									  </td>
+								      <td>R$ 35,00</td>
+					              </tr>
+					          </tbody>
+					      </table>
+					    </div>
+					    <div class="modal-footer">
+					    	<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+					      	<button type="button" class="btn btn-primary" data-dismiss="modal">Sair</button>
+					    </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 			</div>
 			<div class="col-sm-2"> 
-				<div class="card-product">
+				<div class="card-product" data-toggle="modal" data-target="#myModal11">
 					<p>The Silver Music Box</p>
 					<img src="img/11.jpg">
 				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal11">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+					    <div class="modal-header">
+					      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					      <h4 class="modal-title">The Silver Music Box</h4>
+					    </div>
+					    <div class="modal-body">
+					      <table  class="table">
+					          <thead>
+					          	<th>Produto</th>
+					          	<th>Quantidade</th>
+					          	<th>Preço</th>
+					          </thead>
+					          <tbody>
+					              <tr>
+					                  <td><img src="img/11.jpg" style="max-width: 30%;"></td>
+					                  <td>
+					                  	<select class="form-control">
+										  <option value="1">1</option>
+										  <option value="2">2</option>
+										  <option value="3">3</option>
+										  <option value="4">4</option>
+										  <option value="5">5</option>
+										  <option value="6">6</option>
+										  <option value="7">7</option>
+										  <option value="8">8</option>
+										</select>
+									  </td>
+								      <td>R$ 35,00</td>
+					              </tr>
+					          </tbody>
+					      </table>
+					    </div>
+					    <div class="modal-footer">
+					    	<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+					      	<button type="button" class="btn btn-primary" data-dismiss="modal">Sair</button>
+					    </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 			</div>
 			<div class="col-sm-2"> 
-				<div class="card-product">
+				<div class="card-product" data-toggle="modal" data-target="#myModal12">
 					<p>Two Kinds of Truth (A Harry Bosch Novel)</p>
 					<img src="img/12.jpg">
 				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal12">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+					    <div class="modal-header">
+					      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					      <h4 class="modal-title">Two Kinds of Truth (A Harry Bosch Novel)</h4>
+					    </div>
+					    <div class="modal-body">
+					      <table  class="table">
+					          <thead>
+					          	<th>Produto</th>
+					          	<th>Quantidade</th>
+					          	<th>Preço</th>
+					          </thead>
+					          <tbody>
+					              <tr>
+					                  <td><img src="img/12.jpg" style="max-width: 30%;"></td>
+					                  <td>
+					                  	<select class="form-control">
+										  <option value="1">1</option>
+										  <option value="2">2</option>
+										  <option value="3">3</option>
+										  <option value="4">4</option>
+										  <option value="5">5</option>
+										  <option value="6">6</option>
+										  <option value="7">7</option>
+										  <option value="8">8</option>
+										</select>
+									  </td>
+								      <td>R$ 35,00</td>
+					              </tr>
+					          </tbody>
+					      </table>
+					    </div>
+					    <div class="modal-footer">
+					    	<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+					      	<button type="button" class="btn btn-primary" data-dismiss="modal">Sair</button>
+					    </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 			</div>
 			<div class="col-sm-2"> 
-				<div class="card-product">
+				<div class="card-product" data-toggle="modal" data-target="#myModal13">
 					<p>The Rooster Bar</p>
 					<img src="img/13.jpg">
 				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal13">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+					    <div class="modal-header">
+					      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					      <h4 class="modal-title">The Rooster Bar</h4>
+					    </div>
+					    <div class="modal-body">
+					      <table  class="table">
+					          <thead>
+					          	<th>Produto</th>
+					          	<th>Quantidade</th>
+					          	<th>Preço</th>
+					          </thead>
+					          <tbody>
+					              <tr>
+					                  <td><img src="img/13.jpg" style="max-width: 30%;"></td>
+					                  <td>
+					                  	<select class="form-control">
+										  <option value="1">1</option>
+										  <option value="2">2</option>
+										  <option value="3">3</option>
+										  <option value="4">4</option>
+										  <option value="5">5</option>
+										  <option value="6">6</option>
+										  <option value="7">7</option>
+										  <option value="8">8</option>
+										</select>
+									  </td>
+								      <td>R$ 35,00</td>
+					              </tr>
+					          </tbody>
+					      </table>
+					    </div>
+					    <div class="modal-footer">
+					    	<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+					      	<button type="button" class="btn btn-primary" data-dismiss="modal">Sair</button>
+					    </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 			</div>
 			<div class="col-sm-2"> 
-				<div class="card-product">
+				<div class="card-product" data-toggle="modal" data-target="#myModal14">
 					<p>What Remains True: A Novel</p>
 					<img src="img/14.jpg">
 				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal14">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+					    <div class="modal-header">
+					      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					      <h4 class="modal-title">What Remains True: A Novel</h4>
+					    </div>
+					    <div class="modal-body">
+					      <table  class="table">
+					          <thead>
+					          	<th>Produto</th>
+					          	<th>Quantidade</th>
+					          	<th>Preço</th>
+					          </thead>
+					          <tbody>
+					              <tr>
+					                  <td><img src="img/14.jpg" style="max-width: 30%;"></td>
+					                  <td>
+					                  	<select class="form-control">
+										  <option value="1">1</option>
+										  <option value="2">2</option>
+										  <option value="3">3</option>
+										  <option value="4">4</option>
+										  <option value="5">5</option>
+										  <option value="6">6</option>
+										  <option value="7">7</option>
+										  <option value="8">8</option>
+										</select>
+									  </td>
+								      <td>R$ 35,00</td>
+					              </tr>
+					          </tbody>
+					      </table>
+					    </div>
+					    <div class="modal-footer">
+					    	<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+					      	<button type="button" class="btn btn-primary" data-dismiss="modal">Sair</button>
+					    </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 			</div>
 			<div class="col-sm-2"> 
-				<div class="card-product">
+				<div class="card-product" data-toggle="modal" data-target="#myModal15">
 					<p>The Good Girl</p>
 					<img src="img/15.jpg">
 				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal15">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+					    <div class="modal-header">
+					      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					      <h4 class="modal-title">The Good Girl</h4>
+					    </div>
+					    <div class="modal-body">
+					      <table  class="table">
+					          <thead>
+					          	<th>Produto</th>
+					          	<th>Quantidade</th>
+					          	<th>Preço</th>
+					          </thead>
+					          <tbody>
+					              <tr>
+					                  <td><img src="img/15.jpg" style="max-width: 30%;"></td>
+					                  <td>
+					                  	<select class="form-control">
+										  <option value="1">1</option>
+										  <option value="2">2</option>
+										  <option value="3">3</option>
+										  <option value="4">4</option>
+										  <option value="5">5</option>
+										  <option value="6">6</option>
+										  <option value="7">7</option>
+										  <option value="8">8</option>
+										</select>
+									  </td>
+								      <td>R$ 35,00</td>
+					              </tr>
+					          </tbody>
+					      </table>
+					    </div>
+					    <div class="modal-footer">
+					    	<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+					      	<button type="button" class="btn btn-primary" data-dismiss="modal">Sair</button>
+					    </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 			</div>
 			<div class="col-sm-2"> 
-				<div class="card-product">
+				<div class="card-product" data-toggle="modal" data-target="#myModal16">
 					<p>Animal Farm and 1984</p>
 					<img src="img/16.jpg">
 				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal16">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+					    <div class="modal-header">
+					      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					      <h4 class="modal-title">Animal Farm and 1984</h4>
+					    </div>
+					    <div class="modal-body">
+					      <table  class="table">
+					          <thead>
+					          	<th>Produto</th>
+					          	<th>Quantidade</th>
+					          	<th>Preço</th>
+					          </thead>
+					          <tbody>
+					              <tr>
+					                  <td><img src="img/16.jpg" style="max-width: 30%;"></td>
+					                  <td>
+					                  	<select class="form-control">
+										  <option value="1">1</option>
+										  <option value="2">2</option>
+										  <option value="3">3</option>
+										  <option value="4">4</option>
+										  <option value="5">5</option>
+										  <option value="6">6</option>
+										  <option value="7">7</option>
+										  <option value="8">8</option>
+										</select>
+									  </td>
+								      <td>R$ 35,00</td>
+					              </tr>
+					          </tbody>
+					      </table>
+					    </div>
+					    <div class="modal-footer">
+					    	<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+					      	<button type="button" class="btn btn-primary" data-dismiss="modal">Sair</button>
+					    </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 			</div>
 			<div class="col-sm-2"> 
-				<div class="card-product">
+				<div class="card-product" data-toggle="modal" data-target="#myModal17">
 					<p>Evelyn, After: A Novel</p>
 					<img src="img/17.jpg">
 				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal17">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+					    <div class="modal-header">
+					      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					      <h4 class="modal-title">Evelyn, After: A Novel</h4>
+					    </div>
+					    <div class="modal-body">
+					      <table  class="table">
+					          <thead>
+					          	<th>Produto</th>
+					          	<th>Quantidade</th>
+					          	<th>Preço</th>
+					          </thead>
+					          <tbody>
+					              <tr>
+					                  <td><img src="img/17.jpg" style="max-width: 30%;"></td>
+					                  <td>
+					                  	<select class="form-control">
+										  <option value="1">1</option>
+										  <option value="2">2</option>
+										  <option value="3">3</option>
+										  <option value="4">4</option>
+										  <option value="5">5</option>
+										  <option value="6">6</option>
+										  <option value="7">7</option>
+										  <option value="8">8</option>
+										</select>
+									  </td>
+								      <td>R$ 35,00</td>
+					              </tr>
+					          </tbody>
+					      </table>
+					    </div>
+					    <div class="modal-footer">
+					    	<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+					      	<button type="button" class="btn btn-primary" data-dismiss="modal">Sair</button>
+					    </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 			</div>
 			<div class="col-sm-2"> 
-				<div class="card-product">
+				<div class="card-product" data-toggle="modal" data-target="#myModal18">
 					<p>Angel Falls: A Novel</p>
 					<img src="img/18.jpg">
 				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal18">
+					<div class="modal-dialog">
+					  <div class="modal-content">
+					    <div class="modal-header">
+					      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					      <h4 class="modal-title">Angel Falls: A Novel</h4>
+					    </div>
+					    <div class="modal-body">
+					      <table  class="table">
+					          <thead>
+					          	<th>Produto</th>
+					          	<th>Quantidade</th>
+					          	<th>Preço</th>
+					          </thead>
+					          <tbody>
+					              <tr>
+					                  <td><img src="img/18.jpg" style="max-width: 30%;"></td>
+					                  <td>
+					                  	<select class="form-control">
+										  <option value="1">1</option>
+										  <option value="2">2</option>
+										  <option value="3">3</option>
+										  <option value="4">4</option>
+										  <option value="5">5</option>
+										  <option value="6">6</option>
+										  <option value="7">7</option>
+										  <option value="8">8</option>
+										</select>
+									  </td>
+								      <td>R$ 35,00</td>
+					              </tr>
+					          </tbody>
+					      </table>
+					    </div>
+					    <div class="modal-footer">
+					    	<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+					      	<button type="button" class="btn btn-primary" data-dismiss="modal">Sair</button>
+					    </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 			</div>
 		</div>
 	</div>
