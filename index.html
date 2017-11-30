@@ -51,8 +51,9 @@
 		<div class="row">
 			<div class="col-sm-2"> 
 				<div class="card-product" data-toggle="modal" data-target="#myModal1">
-					<p class="productTitle">Obama: An Intimate Portrait</p>
 					<img src="img/1.jpg">
+					<p class="productTitle">Obama: An Intimate Portrait</p>
+					<p id="cardPrice1">R$ 35,00</p>
 				</div>
 			</div>
 
@@ -67,7 +68,7 @@
 					    <div class="modal-body">
 					      <table  class="table">
 					          <thead>
-					          	<th>Produto</th>
+					          	<th></th>
 					          	<th>Quantidade</th>
 					          	<th>Preço</th>
 					          </thead>
@@ -75,7 +76,7 @@
 					              <tr>
 					                  <td><img src="img/1.jpg" style="max-width: 30%;"></td>
 					                  <td>
-					                  	<select class="form-control">
+					                  	<select class="form-control" onchange="price('1')" id="qnt1">
 										  <option value="1">1</option>
 										  <option value="2">2</option>
 										  <option value="3">3</option>
@@ -86,14 +87,13 @@
 										  <option value="8">8</option>
 										</select>
 									  </td>
-								      <td>R$ 35,00</td>
+								      <td><p id="price1">R$ 35,00</p></td>
 					              </tr>
 					          </tbody>
 					      </table>
 					    </div>
-					    <div class="modal-footer">
-					    	<button type="button" class="btn btn-primary" onclick="addToCart()">Adicionar ao carrinho</button>
-					      	
+					    <div class="modal-footer" id="pai">
+					    	<button type="button" class="btn btn-primary" onclick="addToCart('1')" data-dismiss="modal" id="teste">Adicionar ao carrinho</button>
 					    </div>
 					  </div><!-- /.modal-content -->
 					</div><!-- /.modal-dialog -->
@@ -102,8 +102,9 @@
 			<div class="col-sm-2"> 
 				<!-- Trigger the modal with a button -->
 				<div class="card-product" data-toggle="modal" data-target="#myModal2">
-					<p class="productTitle">Milk and Vine: Inspirational Quotes From Classic Vines</p>
 					<img src="img/2.jpg">
+					<p class="productTitle">Milk and Vine: Inspirational Quotes From Classic Vines</p>
+					<p id="cardPrice2">R$ 35,00</p>
 				</div>
 
 				<!-- Modal -->
@@ -117,7 +118,7 @@
 					    <div class="modal-body">
 					      <table  class="table">
 					          <thead>
-					          	<th>Produto</th>
+					          	<th></th>
 					          	<th>Quantidade</th>
 					          	<th>Preço</th>
 					          </thead>
@@ -125,7 +126,7 @@
 					              <tr>
 					                  <td><img src="img/2.jpg" style="max-width: 30%;"></td>
 					                  <td>
-					                  	<select class="form-control">
+					                  	<select class="form-control" onchange="price('2')" id="qnt2">
 										  <option value="1">1</option>
 										  <option value="2">2</option>
 										  <option value="3">3</option>
@@ -136,13 +137,13 @@
 										  <option value="8">8</option>
 										</select>
 									  </td>
-								      <td>R$ 35,00</td>
+								      <td><p id="price2">R$ 35,00</p></td>
 					              </tr>
 					          </tbody>
 					      </table>
 					    </div>
 					    <div class="modal-footer">
-					    	<button type="button" class="btn btn-primary" onclick="addToCart()">Adicionar ao carrinho</button>
+					    	<button type="button" class="btn btn-primary" onclick="addToCart('2')" data-dismiss="modal">Adicionar ao carrinho</button>
 					      	
 					    </div>
 					  </div><!-- /.modal-content -->
@@ -151,8 +152,9 @@
 			</div>
 			<div class="col-sm-2"> 
 				<div class="card-product" data-toggle="modal" data-target="#myModal3">
-					<p class="productTitle">Giraffes Can't Dance</p>
 					<img src="img/3.jpg">
+					<p class="productTitle">Giraffes Can't Dance</p>
+					<p id="cardPrice3">R$ 35,00</p>
 				</div>
 				<!-- Modal -->
 				<div class="modal fade" id="myModal3">
@@ -165,7 +167,7 @@
 					    <div class="modal-body">
 					      <table  class="table">
 					          <thead>
-					          	<th>Produto</th>
+					          	<th></th>
 					          	<th>Quantidade</th>
 					          	<th>Preço</th>
 					          </thead>
@@ -173,7 +175,7 @@
 					              <tr>
 					                  <td><img src="img/3.jpg" style="max-width: 30%;"></td>
 					                  <td>
-					                  	<select class="form-control">
+					                  	<select class="form-control" onchange="price('3')" id="qnt3">
 										  <option value="1">1</option>
 										  <option value="2">2</option>
 										  <option value="3">3</option>
@@ -184,13 +186,13 @@
 										  <option value="8">8</option>
 										</select>
 									  </td>
-								      <td>R$ 35,00</td>
+								      <td><p id="price3">R$ 35,00</p></td>
 					              </tr>
 					          </tbody>
 					      </table>
 					    </div>
 					    <div class="modal-footer">
-					    	<button type="button" class="btn btn-primary" onclick="addToCart()">Adicionar ao carrinho</button>
+					    	<button type="button" class="btn btn-primary" onclick="addToCart('3')" data-dismiss="modal">Adicionar ao carrinho</button>
 					      	
 					    </div>
 					  </div><!-- /.modal-content -->
@@ -199,8 +201,9 @@
 			</div>
 			<div class="col-sm-2"> 
 				<div class="card-product" data-toggle="modal" data-target="#myModal4">
-					<p class="productTitle">First 100 Words</p>
 					<img src="img/4.jpg">
+					<p class="productTitle">First 100 Words</p>
+					<p id="cardPrice4">R$ 35,00</p>
 				</div>
 				<!-- Modal -->
 				<div class="modal fade" id="myModal4">
@@ -213,7 +216,7 @@
 					    <div class="modal-body">
 					      <table  class="table">
 					          <thead>
-					          	<th>Produto</th>
+					          	<th></th>
 					          	<th>Quantidade</th>
 					          	<th>Preço</th>
 					          </thead>
@@ -221,7 +224,7 @@
 					              <tr>
 					                  <td><img src="img/4.jpg" style="max-width: 30%;"></td>
 					                  <td>
-					                  	<select class="form-control">
+					                  	<select class="form-control" onchange="price('4')" id="qnt4">
 										  <option value="1">1</option>
 										  <option value="2">2</option>
 										  <option value="3">3</option>
@@ -232,13 +235,13 @@
 										  <option value="8">8</option>
 										</select>
 									  </td>
-								      <td>R$ 35,00</td>
+								      <td><p id="price4">R$ 35,00</p></td>
 					              </tr>
 					          </tbody>
 					      </table>
 					    </div>
 					    <div class="modal-footer">
-					    	<button type="button" class="btn btn-primary" onclick="addToCart()">Adicionar ao carrinho</button>
+					    	<button type="button" class="btn btn-primary" onclick="addToCart('4')" data-dismiss="modal">Adicionar ao carrinho</button>
 					      	
 					    </div>
 					  </div><!-- /.modal-content -->
@@ -247,8 +250,9 @@
 			</div>
 			<div class="col-sm-2"> 
 				<div class="card-product" data-toggle="modal" data-target="#myModal5">
-					<p class="productTitle">The Getaway (Diary of a Wimpy Kid Book 12)</p>
 					<img src="img/5.jpg">
+					<p class="productTitle">The Getaway (Diary of a Wimpy Kid Book 12)</p>
+					<p id="cardPrice5">R$ 35,00</p>
 				</div>
 				<!-- Modal -->
 				<div class="modal fade" id="myModal5">
@@ -261,7 +265,7 @@
 					    <div class="modal-body">
 					      <table  class="table">
 					          <thead>
-					          	<th>Produto</th>
+					          	<th></th>
 					          	<th>Quantidade</th>
 					          	<th>Preço</th>
 					          </thead>
@@ -269,7 +273,7 @@
 					              <tr>
 					                  <td><img src="img/5.jpg" style="max-width: 30%;"></td>
 					                  <td>
-					                  	<select class="form-control">
+					                  	<select class="form-control" onchange="price('5')" id="qnt5">
 										  <option value="1">1</option>
 										  <option value="2">2</option>
 										  <option value="3">3</option>
@@ -280,13 +284,13 @@
 										  <option value="8">8</option>
 										</select>
 									  </td>
-								      <td>R$ 35,00</td>
+								      <td><p id="price5">R$ 35,00</p></td>
 					              </tr>
 					          </tbody>
 					      </table>
 					    </div>
 					    <div class="modal-footer">
-					    	<button type="button" class="btn btn-primary" onclick="addToCart()">Adicionar ao carrinho</button>
+					    	<button type="button" class="btn btn-primary" onclick="addToCart('5')" data-dismiss="modal">Adicionar ao carrinho</button>
 					      	
 					    </div>
 					  </div><!-- /.modal-content -->
@@ -295,8 +299,9 @@
 			</div>
 			<div class="col-sm-2"> 
 				<div class="card-product" data-toggle="modal" data-target="#myModal6">
-					<p class="productTitle">Goodnight Moon</p>
 					<img src="img/6.jpg">
+					<p class="productTitle">Goodnight Moon</p>
+					<p id="cardPrice6">R$ 35,00</p>
 				</div>
 				<!-- Modal -->
 				<div class="modal fade" id="myModal6">
@@ -309,7 +314,7 @@
 					    <div class="modal-body">
 					      <table  class="table">
 					          <thead>
-					          	<th>Produto</th>
+					          	<th></th>
 					          	<th>Quantidade</th>
 					          	<th>Preço</th>
 					          </thead>
@@ -317,7 +322,7 @@
 					              <tr>
 					                  <td><img src="img/6.jpg" style="max-width: 30%;"></td>
 					                  <td>
-					                  	<select class="form-control">
+					                  	<select class="form-control" onchange="price('6')" id="qnt6">
 										  <option value="1">1</option>
 										  <option value="2">2</option>
 										  <option value="3">3</option>
@@ -328,13 +333,13 @@
 										  <option value="8">8</option>
 										</select>
 									  </td>
-								      <td>R$ 35,00</td>
+								      <td><p id="price6">R$ 35,00</p></td>
 					              </tr>
 					          </tbody>
 					      </table>
 					    </div>
 					    <div class="modal-footer">
-					    	<button type="button" class="btn btn-primary" onclick="addToCart()">Adicionar ao carrinho</button>
+					    	<button type="button" class="btn btn-primary" onclick="addToCart('6')" data-dismiss="modal">Adicionar ao carrinho</button>
 					      	
 					    </div>
 					  </div><!-- /.modal-content -->
@@ -343,8 +348,9 @@
 			</div>
 			<div class="col-sm-2"> 
 				<div class="card-product" data-toggle="modal" data-target="#myModal7">
-					<p class="productTitle">The Very Hungry Caterpillar</p>
 					<img src="img/7.jpg">
+					<p class="productTitle">The Very Hungry Caterpillar</p>
+					<p id="cardPrice7">R$ 35,00</p>
 				</div>
 				<!-- Modal -->
 				<div class="modal fade" id="myModal7">
@@ -357,7 +363,7 @@
 					    <div class="modal-body">
 					      <table  class="table">
 					          <thead>
-					          	<th>Produto</th>
+					          	<th></th>
 					          	<th>Quantidade</th>
 					          	<th>Preço</th>
 					          </thead>
@@ -365,7 +371,7 @@
 					              <tr>
 					                  <td><img src="img/7.jpg" style="max-width: 30%;"></td>
 					                  <td>
-					                  	<select class="form-control">
+					                  	<select class="form-control" onchange="price('7')" id="qnt7">
 										  <option value="1">1</option>
 										  <option value="2">2</option>
 										  <option value="3">3</option>
@@ -376,13 +382,13 @@
 										  <option value="8">8</option>
 										</select>
 									  </td>
-								      <td>R$ 35,00</td>
+								      <td><p id="price7">R$ 35,00</p></td>
 					              </tr>
 					          </tbody>
 					      </table>
 					    </div>
 					    <div class="modal-footer">
-					    	<button type="button" class="btn btn-primary" onclick="addToCart()">Adicionar ao carrinho</button>
+					    	<button type="button" class="btn btn-primary" onclick="addToCart('7')" data-dismiss="modal">Adicionar ao carrinho</button>
 					      	
 					    </div>
 					  </div><!-- /.modal-content -->
@@ -391,8 +397,9 @@
 			</div>
 			<div class="col-sm-2"> 
 				<div class="card-product" data-toggle="modal" data-target="#myModal8">
-					<p class="productTitle">The Midnight Line: A Jack Reacher Novel</p>
 					<img src="img/8.jpg">
+					<p class="productTitle">The Midnight Line: A Jack Reacher Novel</p>
+					<p id="cardPrice8">R$ 35,00</p>
 				</div>
 				<!-- Modal -->
 				<div class="modal fade" id="myModal8">
@@ -405,7 +412,7 @@
 					    <div class="modal-body">
 					      <table  class="table">
 					          <thead>
-					          	<th>Produto</th>
+					          	<th></th>
 					          	<th>Quantidade</th>
 					          	<th>Preço</th>
 					          </thead>
@@ -413,7 +420,7 @@
 					              <tr>
 					                  <td><img src="img/8.jpg" style="max-width: 30%;"></td>
 					                  <td>
-					                  	<select class="form-control">
+					                  	<select class="form-control" onchange="price('8')" id="qnt8">
 										  <option value="1">1</option>
 										  <option value="2">2</option>
 										  <option value="3">3</option>
@@ -424,13 +431,13 @@
 										  <option value="8">8</option>
 										</select>
 									  </td>
-								      <td>R$ 35,00</td>
+								      <td><p id="price8">R$ 35,00</p></td>
 					              </tr>
 					          </tbody>
 					      </table>
 					    </div>
 					    <div class="modal-footer">
-					    	<button type="button" class="btn btn-primary" onclick="addToCart()">Adicionar ao carrinho</button>
+					    	<button type="button" class="btn btn-primary" onclick="addToCart('8')" data-dismiss="modal">Adicionar ao carrinho</button>
 					      	
 					    </div>
 					  </div><!-- /.modal-content -->
@@ -439,8 +446,9 @@
 			</div>
 			<div class="col-sm-2"> 
 				<div class="card-product" data-toggle="modal" data-target="#myModal9">
-					<p class="productTitle">The Good Samaritan</p>
 					<img src="img/9.jpg">
+					<p class="productTitle">The Good Samaritan</p>
+					<p id="cardPrice9">R$ 35,00</p>
 				</div>
 				<!-- Modal -->
 				<div class="modal fade" id="myModal9">
@@ -453,7 +461,7 @@
 					    <div class="modal-body">
 					      <table  class="table">
 					          <thead>
-					          	<th>Produto</th>
+					          	<th></th>
 					          	<th>Quantidade</th>
 					          	<th>Preço</th>
 					          </thead>
@@ -461,7 +469,7 @@
 					              <tr>
 					                  <td><img src="img/9.jpg" style="max-width: 30%;"></td>
 					                  <td>
-					                  	<select class="form-control">
+					                  	<select class="form-control" onchange="price('9')" id="qnt9">
 										  <option value="1">1</option>
 										  <option value="2">2</option>
 										  <option value="3">3</option>
@@ -472,13 +480,13 @@
 										  <option value="8">8</option>
 										</select>
 									  </td>
-								      <td>R$ 35,00</td>
+								      <td><p id="price9">R$ 35,00</p></td>
 					              </tr>
 					          </tbody>
 					      </table>
 					    </div>
 					    <div class="modal-footer">
-					    	<button type="button" class="btn btn-primary" onclick="addToCart()">Adicionar ao carrinho</button>
+					    	<button type="button" class="btn btn-primary" onclick="addToCart('9')" data-dismiss="modal">Adicionar ao carrinho</button>
 					      	
 					    </div>
 					  </div><!-- /.modal-content -->
@@ -487,8 +495,9 @@
 			</div>
 			<div class="col-sm-2"> 
 				<div class="card-product" data-toggle="modal" data-target="#myModal10">
-					<p class="productTitle">The Unremembered Girl: A Novel</p>
 					<img src="img/10.jpg">
+					<p class="productTitle">The Unremembered Girl: A Novel</p>
+					<p id="cardPrice10">R$ 35,00</p>
 				</div>
 				<!-- Modal -->
 				<div class="modal fade" id="myModal10">
@@ -501,7 +510,7 @@
 					    <div class="modal-body">
 					      <table  class="table">
 					          <thead>
-					          	<th>Produto</th>
+					          	<th></th>
 					          	<th>Quantidade</th>
 					          	<th>Preço</th>
 					          </thead>
@@ -509,7 +518,7 @@
 					              <tr>
 					                  <td><img src="img/10.jpg" style="max-width: 30%;"></td>
 					                  <td>
-					                  	<select class="form-control">
+					                  	<select class="form-control" onchange="price('10')" id="qnt10">
 										  <option value="1">1</option>
 										  <option value="2">2</option>
 										  <option value="3">3</option>
@@ -520,13 +529,13 @@
 										  <option value="8">8</option>
 										</select>
 									  </td>
-								      <td>R$ 35,00</td>
+								      <td><p id="price10">R$ 35,00</p></td>
 					              </tr>
 					          </tbody>
 					      </table>
 					    </div>
 					    <div class="modal-footer">
-					    	<button type="button" class="btn btn-primary" onclick="addToCart()">Adicionar ao carrinho</button>
+					    	<button type="button" class="btn btn-primary" onclick="addToCart('10')" data-dismiss="modal">Adicionar ao carrinho</button>
 					      	
 					    </div>
 					  </div><!-- /.modal-content -->
@@ -535,8 +544,9 @@
 			</div>
 			<div class="col-sm-2"> 
 				<div class="card-product" data-toggle="modal" data-target="#myModal11">
-					<p class="productTitle">The Silver Music Box</p>
 					<img src="img/11.jpg">
+					<p class="productTitle">The Silver Music Box</p>
+					<p id="cardPrice11">R$ 35,00</p>
 				</div>
 				<!-- Modal -->
 				<div class="modal fade" id="myModal11">
@@ -549,7 +559,7 @@
 					    <div class="modal-body">
 					      <table  class="table">
 					          <thead>
-					          	<th>Produto</th>
+					          	<th></th>
 					          	<th>Quantidade</th>
 					          	<th>Preço</th>
 					          </thead>
@@ -557,7 +567,7 @@
 					              <tr>
 					                  <td><img src="img/11.jpg" style="max-width: 30%;"></td>
 					                  <td>
-					                  	<select class="form-control">
+					                  	<select class="form-control" onchange="price('11')" id="qnt11">
 										  <option value="1">1</option>
 										  <option value="2">2</option>
 										  <option value="3">3</option>
@@ -568,13 +578,13 @@
 										  <option value="8">8</option>
 										</select>
 									  </td>
-								      <td>R$ 35,00</td>
+								      <td><p id="price11">R$ 35,00</p></td>
 					              </tr>
 					          </tbody>
 					      </table>
 					    </div>
 					    <div class="modal-footer">
-					    	<button type="button" class="btn btn-primary" onclick="addToCart()">Adicionar ao carrinho</button>
+					    	<button type="button" class="btn btn-primary" onclick="addToCart('11')" data-dismiss="modal">Adicionar ao carrinho</button>
 					      	
 					    </div>
 					  </div><!-- /.modal-content -->
@@ -583,8 +593,9 @@
 			</div>
 			<div class="col-sm-2"> 
 				<div class="card-product" data-toggle="modal" data-target="#myModal12">
-					<p class="productTitle">Two Kinds of Truth (A Harry Bosch Novel)</p>
 					<img src="img/12.jpg">
+					<p class="productTitle">Two Kinds of Truth (A Harry Bosch Novel)</p>
+					<p id="cardPrice12">R$ 35,00</p>
 				</div>
 				<!-- Modal -->
 				<div class="modal fade" id="myModal12">
@@ -597,7 +608,7 @@
 					    <div class="modal-body">
 					      <table  class="table">
 					          <thead>
-					          	<th>Produto</th>
+					          	<th></th>
 					          	<th>Quantidade</th>
 					          	<th>Preço</th>
 					          </thead>
@@ -605,7 +616,7 @@
 					              <tr>
 					                  <td><img src="img/12.jpg" style="max-width: 30%;"></td>
 					                  <td>
-					                  	<select class="form-control">
+					                  	<select class="form-control" onchange="price('12')" id="qnt12">
 										  <option value="1">1</option>
 										  <option value="2">2</option>
 										  <option value="3">3</option>
@@ -616,13 +627,13 @@
 										  <option value="8">8</option>
 										</select>
 									  </td>
-								      <td>R$ 35,00</td>
+								      <td><p id="price12">R$ 35,00</p></td>
 					              </tr>
 					          </tbody>
 					      </table>
 					    </div>
 					    <div class="modal-footer">
-					    	<button type="button" class="btn btn-primary" onclick="addToCart()">Adicionar ao carrinho</button>
+					    	<button type="button" class="btn btn-primary" onclick="addToCart('12')" data-dismiss="modal">Adicionar ao carrinho</button>
 					      	
 					    </div>
 					  </div><!-- /.modal-content -->
@@ -631,8 +642,9 @@
 			</div>
 			<div class="col-sm-2"> 
 				<div class="card-product" data-toggle="modal" data-target="#myModal13">
-					<p class="productTitle">The Rooster Bar</p>
 					<img src="img/13.jpg">
+					<p class="productTitle">The Rooster Bar</p>
+					<p id="cardPrice13">R$ 35,00</p>
 				</div>
 				<!-- Modal -->
 				<div class="modal fade" id="myModal13">
@@ -645,7 +657,7 @@
 					    <div class="modal-body">
 					      <table  class="table">
 					          <thead>
-					          	<th>Produto</th>
+					          	<th></th>
 					          	<th>Quantidade</th>
 					          	<th>Preço</th>
 					          </thead>
@@ -653,7 +665,7 @@
 					              <tr>
 					                  <td><img src="img/13.jpg" style="max-width: 30%;"></td>
 					                  <td>
-					                  	<select class="form-control">
+					                  	<select class="form-control" onchange="price('13')" id="qnt13">
 										  <option value="1">1</option>
 										  <option value="2">2</option>
 										  <option value="3">3</option>
@@ -664,13 +676,13 @@
 										  <option value="8">8</option>
 										</select>
 									  </td>
-								      <td>R$ 35,00</td>
+								      <td><p id="price13">R$ 35,00</p></td>
 					              </tr>
 					          </tbody>
 					      </table>
 					    </div>
 					    <div class="modal-footer">
-					    	<button type="button" class="btn btn-primary" onclick="addToCart()">Adicionar ao carrinho</button>
+					    	<button type="button" class="btn btn-primary" onclick="addToCart('13')" data-dismiss="modal">Adicionar ao carrinho</button>
 					      	
 					    </div>
 					  </div><!-- /.modal-content -->
@@ -679,8 +691,9 @@
 			</div>
 			<div class="col-sm-2"> 
 				<div class="card-product" data-toggle="modal" data-target="#myModal14">
-					<p class="productTitle">What Remains True: A Novel</p>
 					<img src="img/14.jpg">
+					<p class="productTitle">What Remains True: A Novel</p>
+					<p id="cardPrice14">R$ 35,00</p>
 				</div>
 				<!-- Modal -->
 				<div class="modal fade" id="myModal14">
@@ -693,7 +706,7 @@
 					    <div class="modal-body">
 					      <table  class="table">
 					          <thead>
-					          	<th>Produto</th>
+					          	<th></th>
 					          	<th>Quantidade</th>
 					          	<th>Preço</th>
 					          </thead>
@@ -701,7 +714,7 @@
 					              <tr>
 					                  <td><img src="img/14.jpg" style="max-width: 30%;"></td>
 					                  <td>
-					                  	<select class="form-control">
+					                  	<select class="form-control" onchange="price('14')" id="qnt14">
 										  <option value="1">1</option>
 										  <option value="2">2</option>
 										  <option value="3">3</option>
@@ -712,13 +725,13 @@
 										  <option value="8">8</option>
 										</select>
 									  </td>
-								      <td>R$ 35,00</td>
+								      <td><p id="price14">R$ 35,00</p></td>
 					              </tr>
 					          </tbody>
 					      </table>
 					    </div>
 					    <div class="modal-footer">
-					    	<button type="button" class="btn btn-primary" onclick="addToCart()">Adicionar ao carrinho</button>
+					    	<button type="button" class="btn btn-primary" onclick="addToCart('14')" data-dismiss="modal">Adicionar ao carrinho</button>
 					      	
 					    </div>
 					  </div><!-- /.modal-content -->
@@ -727,8 +740,9 @@
 			</div>
 			<div class="col-sm-2"> 
 				<div class="card-product" data-toggle="modal" data-target="#myModal15">
-					<p class="productTitle">The Good Girl</p>
 					<img src="img/15.jpg">
+					<p class="productTitle">The Good Girl</p>
+					<p id="cardPrice15">R$ 35,00</p>
 				</div>
 				<!-- Modal -->
 				<div class="modal fade" id="myModal15">
@@ -741,7 +755,7 @@
 					    <div class="modal-body">
 					      <table  class="table">
 					          <thead>
-					          	<th>Produto</th>
+					          	<th></th>
 					          	<th>Quantidade</th>
 					          	<th>Preço</th>
 					          </thead>
@@ -749,7 +763,7 @@
 					              <tr>
 					                  <td><img src="img/15.jpg" style="max-width: 30%;"></td>
 					                  <td>
-					                  	<select class="form-control">
+					                  	<select class="form-control" onchange="price('15')" id="qnt15">
 										  <option value="1">1</option>
 										  <option value="2">2</option>
 										  <option value="3">3</option>
@@ -760,13 +774,13 @@
 										  <option value="8">8</option>
 										</select>
 									  </td>
-								      <td>R$ 35,00</td>
+								      <td><p id="price15">R$ 35,00</p></td>
 					              </tr>
 					          </tbody>
 					      </table>
 					    </div>
 					    <div class="modal-footer">
-					    	<button type="button" class="btn btn-primary" onclick="addToCart()">Adicionar ao carrinho</button>
+					    	<button type="button" class="btn btn-primary" onclick="addToCart('15')" data-dismiss="modal">Adicionar ao carrinho</button>
 					      	
 					    </div>
 					  </div><!-- /.modal-content -->
@@ -775,8 +789,9 @@
 			</div>
 			<div class="col-sm-2"> 
 				<div class="card-product" data-toggle="modal" data-target="#myModal16">
-					<p class="productTitle">Animal Farm and 1984</p>
 					<img src="img/16.jpg">
+					<p class="productTitle">Animal Farm and 1984</p>
+					<p id="cardPrice16">R$ 35,00</p>
 				</div>
 				<!-- Modal -->
 				<div class="modal fade" id="myModal16">
@@ -789,7 +804,7 @@
 					    <div class="modal-body">
 					      <table  class="table">
 					          <thead>
-					          	<th>Produto</th>
+					          	<th></th>
 					          	<th>Quantidade</th>
 					          	<th>Preço</th>
 					          </thead>
@@ -797,7 +812,7 @@
 					              <tr>
 					                  <td><img src="img/16.jpg" style="max-width: 30%;"></td>
 					                  <td>
-					                  	<select class="form-control">
+					                  	<select class="form-control" onchange="price('16')" id="qnt16">
 										  <option value="1">1</option>
 										  <option value="2">2</option>
 										  <option value="3">3</option>
@@ -808,13 +823,13 @@
 										  <option value="8">8</option>
 										</select>
 									  </td>
-								      <td>R$ 35,00</td>
+								      <td><p id="price16">R$ 35,00</p></td>
 					              </tr>
 					          </tbody>
 					      </table>
 					    </div>
 					    <div class="modal-footer">
-					    	<button type="button" class="btn btn-primary" onclick="addToCart()">Adicionar ao carrinho</button>
+					    	<button type="button" class="btn btn-primary" onclick="addToCart('16')" data-dismiss="modal">Adicionar ao carrinho</button>
 					      	
 					    </div>
 					  </div><!-- /.modal-content -->
@@ -823,8 +838,9 @@
 			</div>
 			<div class="col-sm-2"> 
 				<div class="card-product" data-toggle="modal" data-target="#myModal17">
-					<p class="productTitle">Evelyn, After: A Novel</p>
 					<img src="img/17.jpg">
+					<p class="productTitle">Evelyn, After: A Novel</p>
+					<p id="cardPrice17">R$ 35,00</p>
 				</div>
 				<!-- Modal -->
 				<div class="modal fade" id="myModal17">
@@ -837,7 +853,7 @@
 					    <div class="modal-body">
 					      <table  class="table">
 					          <thead>
-					          	<th>Produto</th>
+					          	<th></th>
 					          	<th>Quantidade</th>
 					          	<th>Preço</th>
 					          </thead>
@@ -845,7 +861,7 @@
 					              <tr>
 					                  <td><img src="img/17.jpg" style="max-width: 30%;"></td>
 					                  <td>
-					                  	<select class="form-control">
+					                  	<select class="form-control" onchange="price('17')" id="qnt17">
 										  <option value="1">1</option>
 										  <option value="2">2</option>
 										  <option value="3">3</option>
@@ -856,13 +872,13 @@
 										  <option value="8">8</option>
 										</select>
 									  </td>
-								      <td>R$ 35,00</td>
+								      <td><p id="price17">R$ 35,00</p></td>
 					              </tr>
 					          </tbody>
 					      </table>
 					    </div>
 					    <div class="modal-footer">
-					    	<button type="button" class="btn btn-primary" onclick="addToCart()">Adicionar ao carrinho</button>
+					    	<button type="button" class="btn btn-primary" onclick="addToCart('17')" data-dismiss="modal">Adicionar ao carrinho</button>
 					      	
 					    </div>
 					  </div><!-- /.modal-content -->
@@ -871,8 +887,9 @@
 			</div>
 			<div class="col-sm-2"> 
 				<div class="card-product" data-toggle="modal" data-target="#myModal18">
-					<p class="productTitle">Angel Falls: A Novel</p>
 					<img src="img/18.jpg">
+					<p class="productTitle">Angel Falls: A Novel</p>
+					<p id="cardPrice18">R$ 35,00</p>
 				</div>
 				<!-- Modal -->
 				<div class="modal fade" id="myModal18">
@@ -885,7 +902,7 @@
 					    <div class="modal-body">
 					      <table  class="table">
 					          <thead>
-					          	<th>Produto</th>
+					          	<th></th>
 					          	<th>Quantidade</th>
 					          	<th>Preço</th>
 					          </thead>
@@ -893,7 +910,7 @@
 					              <tr>
 					                  <td><img src="img/18.jpg" style="max-width: 30%;"></td>
 					                  <td>
-					                  	<select class="form-control">
+					                  	<select class="form-control" onchange="price('18')" id="qnt18">
 										  <option value="1">1</option>
 										  <option value="2">2</option>
 										  <option value="3">3</option>
@@ -904,13 +921,13 @@
 										  <option value="8">8</option>
 										</select>
 									  </td>
-								      <td>R$ 35,00</td>
+								      <td><p id="price18">R$ 35,00</p></td>
 					              </tr>
 					          </tbody>
 					      </table>
 					    </div>
 					    <div class="modal-footer">
-					    	<button type="button" class="btn btn-primary" onclick="addToCart()">Adicionar ao carrinho</button>
+					    	<button type="button" class="btn btn-primary" onclick="addToCart('18')" data-dismiss="modal">Adicionar ao carrinho</button>
 					      	
 					    </div>
 					  </div><!-- /.modal-content -->

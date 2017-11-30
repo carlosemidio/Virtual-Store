@@ -53,10 +53,22 @@ function search(){
 }
 
 
-function addToCart(){
+function addToCart(qnt){
 	value = parseInt($('.badge').text());
 
-	value += 1;
+	value += parseInt(document.getElementById('qnt' + qnt).value);
 
 	$(".badge").text(value);
+
+	document.getElementById('qnt' + qnt).value = 1;
+}
+
+function price(price){
+
+	var str = (document.getElementById('cardPrice'+price).innerHTML);
+	var res = str.replace("R$ ", "");
+
+	initialPrice = parseInt(res);
+
+	document.getElementById('price'+price).innerHTML = "R$ " + (initialPrice * document.getElementById('qnt' + price).value);
 }
