@@ -24,5 +24,3 @@ function Carrinho(_dono) {
 		}
     };
 }
-
-
