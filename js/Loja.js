@@ -14,7 +14,7 @@ function Carrinho(_dono) {
 	Produtos  = [];
 
 	/* Função que faz a escolha do PC */
-	this.addToCar = function (produto, quantidade) {
+	this.addToCart = function (produto, quantidade) {
 		if (Produtos.indexOf(produto) >= 0) {
 			Produtos[Produtos.indexOf(produto)].quantidade += quantidade;
 		}
@@ -30,6 +30,8 @@ var carrinhos = [];
 
 $(document).ready(function(){
     carrinhos[carrinhos.length] = new Carrinho("");
+
+    $(".badge").text("0");
 });
 
 
@@ -48,4 +50,13 @@ function search(){
 			$(this).parent().parent().css('display','block');	
 		}
 	});
+}
+
+
+function addToCart(){
+	value = parseInt($('.badge').text());
+
+	value += 1;
+
+	$(".badge").text(value);
 }
