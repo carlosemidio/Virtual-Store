@@ -31,3 +31,21 @@ var carrinhos = [];
 $(document).ready(function(){
     carrinhos[carrinhos.length] = new Carrinho("");
 });
+
+
+function search(){
+	var term = $('#busca').val();
+
+	$('.productTitle').each(function (e) {
+		var texto = $(this).text();
+
+
+		if (texto.toLowerCase().indexOf(term.toLowerCase()) == -1) {
+			$(this).parent().parent().css('display','none');				
+		}
+
+		else{
+			$(this).parent().parent().css('display','block');	
+		}
+	});
+}
