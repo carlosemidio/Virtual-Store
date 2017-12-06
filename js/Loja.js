@@ -104,9 +104,9 @@ $(document).ready(function(){
     for (var i = 1; i <= produtosName.length; i++) {
     	$('#mainContent').append('<div class="col-sm-2 col-xs-12">'+ 
 				'<div class="card-product" data-toggle="modal" data-target="#myModal'+i+'">'+ 
-					'<img src="img/'+i+'.jpg">'+ 
-					'<p class="productTitle">'+produtosName[i-1]+'</p>'+ 
-					'<p id="cardPrice'+i+'">R$ 35,00</p>'+ 
+					'<img class="img-responsive" src="img/'+i+'.jpg">'+ 
+					'<p class="productTitle text-center">'+produtosName[i-1]+'</p>'+ 
+					'<p class="text-center" id="cardPrice'+i+'">R$ 35,00</p>'+ 
 				'</div>'+ 
 			'</div>'+ 
 
