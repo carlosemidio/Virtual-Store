@@ -12,12 +12,15 @@
 	<link rel="stylesheet" type="text/css" href="font/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/loja.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
+	
+	<div class="overlay"></div>
+
 	 <!-- Fixed navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -42,7 +45,7 @@
 	    	</div>
 
 	    	<div class="col-sm-1 col-xs-2">
-				<li><a href="#" data-toggle="modal" data-target="#cartModal"><i class="fa fa-cart-arrow-down" aria-hidden="true"><span class="badge"></span></i></a></li>
+				<li><a href="#" onclick="seeCart()" id="cartIcon"><i class="fa fa-cart-arrow-down" aria-hidden="true"><span class="tooltiptext">Seu carrinho está vazio!</span><span class="badge"></span></i></a></li>
 			</div>
         </div>
 

@@ -10,6 +10,7 @@ function Produto(_codigo, _foto, _nome, _descricao, _preco, _peso, _quantidade) 
 }
 
 
+
 var produtosName = ["Obama: An Intimate Portrait",
 					"Milk and Vine: Inspirational Quotes From Classic Vines",
 					"Giraffes Can't Dance",
@@ -86,6 +87,16 @@ function IndexOfCarrinhos(_user){
 
 $(document).ready(function(){
     $(".badge").text("0");
+
+    $("#cartIcon").hover(function(){
+        	if ($(".badge").text() == '0') {
+        		$('.tooltiptext').css("visibility", "visible");
+        		$('.overlay').css("visibility", "visible");
+        	}
+        }, function(){
+        $('.tooltiptext').css("visibility", "hidden");
+        $('.overlay').css("visibility", "hidden");
+    });
 
     $("#linkCadastro").click(function() {
     	haveProduct = false;
@@ -302,14 +313,14 @@ function cadastrar(){
 		}
 
 		$('#cartModalTableBody').append('<tr>'+ 
-								                  '<td></td>'+
-								                  '<td></td>'+
-								                  '<td></td>'+ 
-								                  '<td></td>'+ 
-								                  '<td></td>'+
-								                  '<td></td>'+
-								                  '<td></td>'+
-								                  '<td><p">Total a pagar: R$'+total+',00</p></td>'+  
+							                  '<td></td>'+
+							                  '<td></td>'+
+							                  '<td></td>'+ 
+							                  '<td></td>'+ 
+							                  '<td></td>'+
+							                  '<td></td>'+
+							                  '<td></td>'+
+							                  '<td><p">Total a pagar: R$'+total+',00</p></td>'+  
 								              '</tr>'
 								    );
 	}else{
@@ -347,15 +358,15 @@ function cadastrar(){
 		}
 
 		$('#cartModalTableBody').append('<tr>'+ 
-								                  '<td></td>'+
-								                  '<td></td>'+
-								                  '<td></td>'+ 
-								                  '<td></td>'+ 
-								                  '<td></td>'+
-								                  '<td></td>'+
-								                  '<td></td>'+
-								                  '<td><p">Total a pagar: R$'+total+',00</p></td>'+  
-								              '</tr>'
+						                  '<td></td>'+
+						                  '<td></td>'+
+						                  '<td></td>'+ 
+						                  '<td></td>'+ 
+						                  '<td></td>'+
+						                  '<td></td>'+
+						                  '<td></td>'+
+						                  '<td><p">Total a pagar: R$'+total+',00</p></td>'+  
+							              '</tr>'
 								    );
 	}
 
@@ -373,4 +384,11 @@ function sair(){
 	document.getElementById('userNameLink').innerHTML = 'Usuário';
 	$(".badge").text('0');
 	$('#cartModalTableBody').empty();
+}
+
+
+function seeCart(){
+	if ($(".badge").text() != '0') {
+		$('#cartModal').modal('toggle');
+	}
 }
